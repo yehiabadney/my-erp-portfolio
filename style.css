@@ -519,3 +519,132 @@ section {
     }
 
 }
+/* =====================================
+   Stage 2 - Power BI Projects Showcase
+===================================== */
+
+.projects-section {
+    background: #f8fafc;
+}
+
+
+.projects-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+
+}
+
+
+.project-card {
+
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.10);
+    transition:0.4s ease;
+
+}
+
+
+.project-card:hover {
+
+    transform:translateY(-12px);
+
+}
+
+
+.project-image {
+
+    height:220px;
+    overflow:hidden;
+
+}
+
+
+.project-image img {
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.5s;
+
+}
+
+
+.project-card:hover img {
+
+    transform:scale(1.08);
+
+}
+
+
+.project-info {
+
+    padding:25px;
+
+}
+
+
+.project-info h3 {
+
+    font-size:22px;
+    color:#0f172a;
+    margin-bottom:12px;
+
+}
+
+
+.project-info p {
+
+    color:#64748b;
+    line-height:1.7;
+
+}
+
+
+/* Power BI Labels */
+
+.project-tools {
+
+    margin-top:20px;
+
+}
+
+
+.project-tools span {
+
+    display:inline-block;
+    padding:7px 14px;
+    margin:5px;
+    background:#dbeafe;
+    color:#1d4ed8;
+    border-radius:20px;
+    font-size:13px;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .projects-grid {
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .projects-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+}

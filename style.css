@@ -410,6 +410,102 @@ section {
     }
 
 }
+/* =====================================
+   Stage 2 - Professional Experience
+   ERP & BI Career Section
+===================================== */
+
+.experience-section {
+    background: #ffffff;
+}
+
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+
+.experience-card {
+    background: #f8fafc;
+    padding: 35px;
+    border-radius: 20px;
+    border-left: 6px solid #2563eb;
+    transition: 0.3s ease;
+}
+
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+
+.experience-card h3 {
+    font-size: 24px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+
+.experience-card h4 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+
+.experience-card ul {
+    padding-left: 20px;
+}
+
+
+.experience-card li {
+    margin-bottom: 10px;
+    color: #475569;
+}
+
+
+/* ERP Highlight Box */
+
+.erp-highlight {
+
+    margin-top:40px;
+    padding:35px;
+    border-radius:20px;
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #dbeafe
+    );
+
+}
+
+
+.erp-highlight h3 {
+
+    color:#1e3a8a;
+    margin-bottom:15px;
+
+}
+
+
+.erp-highlight p {
+
+    color:#334155;
+    font-size:17px;
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .experience-container {
+        grid-template-columns:1fr;
+    }
+
+}
 
 
 @media(max-width:600px){

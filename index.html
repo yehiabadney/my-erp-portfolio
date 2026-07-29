@@ -1,259 +1,279 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>يحيى بدني | حلول ERP وتحليل البيانات Power BI</title>
-    <!-- استدعاء خط تجوال العربي -->
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #0f172a;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --bg-light: #f8fafc;
-            --card-bg: #ffffff;
-            --text-dark: #1e293b;
-            --text-muted: #64748b;
-        }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Tajawal', sans-serif;
-        }
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+<title>Yehia Badeny | ERP Consultant | Power BI Expert</title>
 
-        /* Header / Hero Section */
-        header {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
+<meta name="description"
+content="Professional ERP Consultant, Oracle ERP Specialist, Power BI Developer, Business Intelligence Expert and Corporate Trainer.">
 
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            font-weight: 800;
-        }
+<meta name="keywords"
+content="ERP, Oracle ERP, Power BI, Dashboard, Business Intelligence, Training, Consultant">
 
-        header p.subtitle {
-            font-size: 1.3rem;
-            color: #94a3b8;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
+<meta name="author"
+content="Yehia Badeny">
 
-        .cta-btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: background 0.3s;
-        }
+<link rel="icon"
+href="assets/icons/favicon.png">
 
-        .cta-btn:hover {
-            background-color: var(--accent-hover);
-        }
+<!-- Google Font -->
 
-        /* Main Container */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
 
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 40px;
-            color: var(--primary);
-            position: relative;
-        }
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background: var(--accent);
-            margin: 8px auto 0;
-            border-radius: 2px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
 
-        /* Value Proposition Grid */
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 60px;
-        }
+<!-- Bootstrap -->
 
-        .card {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
-        }
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
 
-        .card h3 {
-            color: var(--accent);
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
+<!-- Font Awesome -->
 
-        /* Dashboard Showcase */
-        .showcase-item {
-            background: var(--card-bg);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-            border: 1px solid #e2e8f0;
-        }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-        .showcase-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            background-color: #e2e8f0;
-        }
+<!-- AOS -->
 
-        .showcase-content {
-            padding: 25px;
-        }
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+rel="stylesheet">
 
-        /* Video Section */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-top: 20px;
-        }
+<!-- Swiper -->
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-        /* Call to Action Banner */
-        .consultation-banner {
-            background: var(--primary);
-            color: white;
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 60px;
-        }
+<!-- CSS -->
 
-        .consultation-banner h2 {
-            margin-bottom: 15px;
-        }
+<link rel="stylesheet"
+href="assets/css/style.css">
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: var(--text-muted);
-            margin-top: 40px;
-            border-top: 1px solid #e2e8f0;
-        }
-    </style>
+<link rel="stylesheet"
+href="assets/css/responsive.css">
+
+<link rel="stylesheet"
+href="assets/css/animations.css">
+
 </head>
+
 <body>
 
-    <!-- قسم الغلاف التعريفى (Hero Section) -->
-    <header>
-        <h1>تحويل البيانات إلى قرارات استراتيجية</h1>
-        <p class="subtitle">نساعد المنشآت والشركات في الربط بين أنظمة إدارة الموارد (ERP Systems) ولوحات قيادة Power BI المتقدمة للتحكم الكامل في المبيعات، المخزون، والمالية.</p>
-        <a href="#contact" class="cta-btn">تواصل لربط وتطوير منشأتك</a>
-    </header>
+<!-- ============================= -->
+<!-- Loading Screen -->
+<!-- ============================= -->
 
-    <div class="container">
+<div id="loader">
 
-        <!-- قسم كيف أساعد منشأتك (الخدمات والخبرات) -->
-        <h2 class="section-title">كيف نطور منشأتك؟</h2>
-        <div class="grid-3">
-            <div class="card">
-                <h3>إدارة أنظمة ERP</h3>
-                <p>ضبط صلاحيات المستخدمين، إدارة سير دورات العمل (Workflows)، وتحسين العمليات التشغيلية (Finance, Procurement, Inventory) لضمان دقة وانسيابية البيانات.</p>
-            </div>
-            <div class="card">
-                <h3>تحليل البيانات بـ Power BI & Excel</h3>
-                <p>بناء نماذج بيانات متقدمة باستخدام DAX و Power Query لاستخراج أقصى فائدة من البيانات الخام وتحديد فرص النمو وتقليل الهدر.</p>
-            </div>
-            <div class="card">
-                <h3>ربط الأنظمة واكتشاف الفرص</h3>
-                <p>ربط بيانات الـ ERP بشكل مباشر وتلقائي مع لوحات قيادة التفاعلية لمساعدة الإدارة العليا على اتخاذ القرارات بناءً على أرقام فعلية ومباشرة.</p>
-            </div>
-        </div>
+<div class="spinner"></div>
 
-        <!-- قسم عرض لوحات القيادة (Power BI Dashboards Showcase) -->
-        <h2 class="section-title">معرض لوحات القيادة (Dashboards)</h2>
-        
-        <div class="showcase-item">
-            <!-- يمكنك استبدال الرابط أدناه بصورة لوحة قيادة حقيقية لديك -->
-            <img src="https://via.placeholder.com/1000x500/1e293b/ffffff?text=Power+BI+Sales+%26+Inventory+Dashboard" alt="Power BI Dashboard" class="showcase-img">
-            <div class="showcase-content">
-                <h3>لوحة قيادة لمراقبة الأداء المالي والمخزون</h3>
-                <p>هذه اللوحة توضح كيفية ربط بيانات ERP لمراقبة حركة المنتجات الأكثر مبيعاً، وتنبيهات المخزون الحرج، وتحليل الهامش الربحي لكل فرع بشكل لحظي.</p>
-            </div>
-        </div>
+<h2>Loading...</h2>
 
-        <!-- قسم الفيديوهات التعليمية (Educational Content) -->
-        <h2 class="section-title">مركز الشروحات والتعليم</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 20px;">
-            نُشارك معرفتنا لمساعدة المحللين والشركات على فهم كيفية الاستفادة من Power BI و Excel والـ ERP:
-        </p>
+</div>
 
-        <div class="grid-3">
-            <div>
-                <h3>1. كيفية ربط Power BI بـ ERP</h3>
-                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">شرح عملي لخطوات سحب البيانات دون التأثير على أداء قاعدة البيانات الرئيسية.</p>
-                <div class="video-container">
-                    <!-- ضع رابط الفيديو الخاص بك من يوتيوب هنا مكان Embed -->
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="فيديو تعليمي Power BI" allowfullscreen></iframe>
-                </div>
-            </div>
+<!-- ============================= -->
+<!-- Navigation -->
+<!-- ============================= -->
 
-            <div>
-                <h3>2. احتراف معادلات DAX للتحليل المالي</h3>
-                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">طريقة حساب النمو السنوي (YoY) والمقارنات الزمنية بكل سهولة.</p>
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="فيديو تعليمي DAX" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
+<nav class="navbar navbar-expand-lg fixed-top">
 
-        <!-- قسم الدعوة للتواصل (Call to Action) -->
-        <div class="consultation-banner" id="contact">
-            <h2>هل ترغب في تحويل بيانات منشأتك إلى لوحات تفاعلية؟</h2>
-            <p style="margin-bottom: 20px;">نقدم استشارات مجانية أولية لتحليل وضع البيانات والـ ERP لديك ومساعدتك في التطوير.</p>
-            <a href="mailto:your-email@example.com" class="cta-btn" style="background-color: white; color: var(--primary);">طلب استشارة أو تواصل مباشر</a>
-        </div>
+<div class="container">
 
-    </div>
+<a class="navbar-brand"
+href="#">
 
-    <footer>
-        <p>© 2026 جميع الحقوق محفوظة - يحيى بدني | خبير ERP و Power BI</p>
-    </footer>
+<span class="logo-blue">Yehia</span>
 
-</body>
-</html>
+<span class="logo-white">Badeny</span>
+
+</a>
+
+<button
+class="navbar-toggler"
+
+type="button"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#navbar">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+
+id="navbar">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a href="#home"
+class="nav-link">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#about"
+class="nav-link">
+
+About
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#services"
+class="nav-link">
+
+Services
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#portfolio"
+class="nav-link">
+
+Portfolio
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#training"
+class="nav-link">
+
+Training
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#contact"
+class="nav-link">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+<a href="#contact"
+class="btn btn-primary ms-3">
+
+Book Consultation
+
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ============================= -->
+<!-- Hero Section -->
+<!-- ============================= -->
+
+<section
+id="home"
+class="hero">
+
+<div id="particles-js"></div>
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-7">
+
+<h4>
+
+Welcome To My Professional Website
+
+</h4>
+
+<h1>
+
+ERP Consultant
+
+<br>
+
+Power BI Expert
+
+<br>
+
+Corporate Trainer
+
+</h1>
+
+<p>
+
+Helping organizations transform their business through ERP systems,
+Business Intelligence, process automation, and executive dashboards.
+
+</p>
+
+<a href="#portfolio"
+class="btn btn-primary btn-lg">
+
+View Portfolio
+
+</a>
+
+<a href="#contact"
+class="btn btn-outline-light btn-lg">
+
+Hire Me
+
+</a>
+
+</div>
+
+<div class="col-lg-5 text-center">
+
+<img
+
+src="assets/images/profile.png"
+
+class="hero-image"
+
+alt="Yehia Badeny">
+
+</div>
+
+</div>
+
+</div>
+
+</section>

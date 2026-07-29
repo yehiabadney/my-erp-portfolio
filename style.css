@@ -648,3 +648,137 @@ section {
     }
 
 }
+/* =====================================
+   Stage 2 - Contact & Footer Design
+===================================== */
+
+.contact-section {
+
+    background:#0f172a;
+    color:white;
+    text-align:center;
+
+}
+
+
+.contact-box {
+
+    max-width:800px;
+    margin:auto;
+}
+
+
+.contact-box h2 {
+
+    font-size:36px;
+    margin-bottom:20px;
+
+}
+
+
+.contact-box p {
+
+    color:#cbd5e1;
+    font-size:18px;
+    margin-bottom:30px;
+
+}
+
+
+/* Contact Buttons */
+
+.contact-buttons {
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+
+.contact-btn {
+
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+
+}
+
+
+.linkedin-btn {
+
+    background:#0a66c2;
+    color:white;
+
+}
+
+
+.github-btn {
+
+    background:#ffffff;
+    color:#111827;
+
+}
+
+
+.cv-btn {
+
+    background:#38bdf8;
+    color:#0f172a;
+
+}
+
+
+.contact-btn:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+/* Footer */
+
+.footer {
+
+    background:#020617;
+    color:#94a3b8;
+    text-align:center;
+    padding:25px;
+
+}
+
+
+.footer strong {
+
+    color:white;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    .contact-box h2 {
+
+        font-size:28px;
+
+    }
+
+    .contact-buttons {
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .contact-btn {
+
+        width:80%;
+
+    }
+
+}

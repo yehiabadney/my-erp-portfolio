@@ -1,0 +1,425 @@
+/* =====================================
+   Yehia ERP & Power BI Portfolio
+   Stage 2 - Professional Design Base
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+
+/* Titles */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section-title p {
+    color: #6b7280;
+    margin-top: 10px;
+}
+
+
+/* Cards */
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+/* =====================================
+   Stage 2 - Hero Section Design
+   ERP & Power BI Portfolio
+===================================== */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e40af);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 60%;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e0f2fe;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin-bottom: 30px;
+    color: #e5e7eb;
+}
+
+
+/* Hero Dashboard Image */
+
+.hero-dashboard {
+    width: 40%;
+    position: relative;
+}
+
+.hero-dashboard img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.35);
+    animation: floatDashboard 4s ease-in-out infinite;
+}
+
+
+/* Floating Animation */
+
+@keyframes floatDashboard {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* Background Shapes */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(56,189,248,0.2);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+}
+
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    bottom: -80px;
+    left: -80px;
+}
+/* =====================================
+   Stage 2 - Skills Cards Design
+   ERP | Oracle | Power BI
+===================================== */
+
+.skills-section {
+    background: #ffffff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+.skill-card {
+    background: #f8fafc;
+    padding: 30px 20px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    transition: 0.4s ease;
+}
+
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+
+.skill-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+.skill-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+
+.skill-card p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* Skill Progress Bars */
+
+.skill-progress {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.erp-level {
+    width: 95%;
+}
+
+
+.powerbi-level {
+    width: 90%;
+}
+
+
+.oracle-level {
+    width: 92%;
+}
+
+
+.sql-level {
+    width: 75%;
+}
+
+
+/* Responsive */
+
+@media(max-width: 992px){
+
+    .skills-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width: 600px){
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        width:100%;
+    }
+
+    .hero-dashboard {
+        display:none;
+    }
+
+    .hero h1 {
+        font-size:36px;
+    }
+
+}
+/* =====================================
+   Stage 2 - Power BI Dashboard Gallery
+===================================== */
+
+.dashboard-section {
+    background: #f8fafc;
+}
+
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.dashboard-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+    transition: 0.4s ease;
+}
+
+
+.dashboard-card:hover {
+    transform: translateY(-12px);
+}
+
+
+.dashboard-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.dashboard-content {
+    padding: 25px;
+}
+
+
+.dashboard-content h3 {
+    font-size: 22px;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+
+.dashboard-content p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* Dashboard Tags */
+
+.dashboard-tags {
+    margin-top: 15px;
+}
+
+
+.dashboard-tags span {
+
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin: 5px;
+}
+
+
+/* Dashboard Animation */
+
+.dashboard-card {
+    animation: fadeDashboard 1s ease;
+}
+
+
+@keyframes fadeDashboard {
+
+    from {
+        opacity:0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Dashboard */
+
+@media(max-width: 992px){
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .dashboard-grid {
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-card img {
+        height:200px;
+    }
+
+}

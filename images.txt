@@ -1,0 +1,7 @@
+powerbi-dashboard.png
+executive-dashboard.png
+finance-dashboard.png
+erp-dashboard.png
+erp-project.png
+powerbi-project.png
+data-project.png

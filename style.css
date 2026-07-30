@@ -1,1217 +1,607 @@
-/* =====================================
-   Yehia ERP & Power BI Portfolio
-   Stage 2 - Professional Design Base
-===================================== */
+/* ==========================
+   Global Settings
+========================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f5f7fb;
-    color: #1f2937;
-    line-height: 1.6;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-section {
-    padding: 70px 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
-/* Titles */
 
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-title h2 {
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.section-title p {
-    color: #6b7280;
-    margin-top: 10px;
+html{
+    scroll-behavior:smooth;
 }
 
 
-/* Cards */
 
-.card {
-    background: white;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-}
+body{
 
-.card:hover {
-    transform: translateY(-8px);
-}
+    font-family:'Poppins',sans-serif;
 
+    background:#08111f;
 
-/* Buttons */
+    color:#ffffff;
 
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
-/* =====================================
-   Stage 2 - Hero Section Design
-   ERP & Power BI Portfolio
-===================================== */
-
-.hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, #0f172a, #1e40af);
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-content {
-    width: 60%;
-    z-index: 2;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    font-weight: 800;
-}
-
-.hero h1 span {
-    color: #38bdf8;
-}
-
-.hero h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #e0f2fe;
-}
-
-.hero p {
-    font-size: 18px;
-    max-width: 650px;
-    margin-bottom: 30px;
-    color: #e5e7eb;
-}
-
-
-/* Hero Dashboard Image */
-
-.hero-dashboard {
-    width: 40%;
-    position: relative;
-}
-
-.hero-dashboard img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow:
-        0 20px 50px rgba(0,0,0,0.35);
-    animation: floatDashboard 4s ease-in-out infinite;
-}
-
-
-/* Floating Animation */
-
-@keyframes floatDashboard {
-
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-
-/* Background Shapes */
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    background: rgba(56,189,248,0.2);
-    border-radius: 50%;
-    top: -100px;
-    right: -100px;
-}
-
-
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    bottom: -80px;
-    left: -80px;
-}
-/* =====================================
-   Stage 2 - Skills Cards Design
-   ERP | Oracle | Power BI
-===================================== */
-
-.skills-section {
-    background: #ffffff;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-
-.skill-card {
-    background: #f8fafc;
-    padding: 30px 20px;
-    border-radius: 18px;
-    text-align: center;
-    border: 1px solid #e5e7eb;
-    transition: 0.4s ease;
-}
-
-
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-}
-
-
-.skill-icon {
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
-
-.skill-card h3 {
-    font-size: 22px;
-    margin-bottom: 12px;
-    color: #0f172a;
-}
-
-
-.skill-card p {
-    color: #64748b;
-    font-size: 15px;
-}
-
-
-/* Skill Progress Bars */
-
-.skill-progress {
-    margin-top: 20px;
-    text-align: left;
-}
-
-
-.progress-bar {
-    width: 100%;
-    height: 10px;
-    background: #e2e8f0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-.progress-fill {
-    height: 100%;
-    border-radius: 10px;
-}
-
-
-.erp-level {
-    width: 95%;
-}
-
-
-.powerbi-level {
-    width: 90%;
-}
-
-
-.oracle-level {
-    width: 92%;
-}
-
-
-.sql-level {
-    width: 75%;
-}
-
-
-/* Responsive */
-
-@media(max-width: 992px){
-
-    .skills-grid {
-        grid-template-columns: repeat(2,1fr);
-    }
+    line-height:1.7;
 
 }
 
 
-@media(max-width: 600px){
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
+a{
 
-    .hero-content {
-        width:100%;
-    }
-
-    .hero-dashboard {
-        display:none;
-    }
-
-    .hero h1 {
-        font-size:36px;
-    }
+    text-decoration:none;
 
 }
-/* =====================================
-   Stage 2 - Power BI Dashboard Gallery
-===================================== */
 
-.dashboard-section {
-    background: #f8fafc;
+
+
+section{
+
+    padding:90px 0;
+
 }
 
 
-.dashboard-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+
+/* ==========================
+   Navbar
+========================== */
+
+
+.navbar{
+
+    background:rgba(8,17,31,0.95);
+
+    padding:18px 0;
+
+    backdrop-filter:blur(10px);
+
 }
 
 
-.dashboard-card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
-    transition: 0.4s ease;
+
+.brand-main{
+
+    color:#00c6ff;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+.brand-second{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
 }
 
 
-.dashboard-card:hover {
-    transform: translateY(-12px);
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:20px;
+
+    font-weight:500;
+
+}
+
+
+
+.nav-link:hover{
+
+    color:#00c6ff !important;
+
 }
 
 
-.dashboard-card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    display: block;
+
+
+/* ==========================
+   Buttons
+========================== */
+
+
+.btn-primary{
+
+    background:#00c6ff;
+
+    border:none;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+
+
+.btn-primary:hover{
+
+    background:#0095d9;
+
 }
 
 
-.dashboard-content {
-    padding: 25px;
-}
 
+.btn-outline-light{
 
-.dashboard-content h3 {
-    font-size: 22px;
-    color: #0f172a;
-    margin-bottom: 12px;
-}
+    border-radius:30px;
 
-
-.dashboard-content p {
-    color: #64748b;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-
-/* Dashboard Tags */
-
-.dashboard-tags {
-    margin-top: 15px;
-}
-
-
-.dashboard-tags span {
-
-    display: inline-block;
-    background: #e0f2fe;
-    color: #0369a1;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    margin: 5px;
-}
-
-
-/* Dashboard Animation */
-
-.dashboard-card {
-    animation: fadeDashboard 1s ease;
-}
-
-
-@keyframes fadeDashboard {
-
-    from {
-        opacity:0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity:1;
-        transform: translateY(0);
-    }
-}
-
-
-/* Responsive Dashboard */
-
-@media(max-width: 992px){
-
-    .dashboard-grid {
-        grid-template-columns: repeat(2,1fr);
-    }
+    padding:12px 30px;
 
 }
-/* =====================================
-   Stage 2 - Professional Experience
-   ERP & BI Career Section
-===================================== */
-
-.experience-section {
-    background: #ffffff;
-}
 
 
-.experience-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-}
 
 
-.experience-card {
-    background: #f8fafc;
-    padding: 35px;
-    border-radius: 20px;
-    border-left: 6px solid #2563eb;
-    transition: 0.3s ease;
-}
+/* ==========================
+   Hero Section
+========================== */
 
 
-.experience-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-}
+.hero{
 
+    min-height:100vh;
 
-.experience-card h3 {
-    font-size: 24px;
-    color: #0f172a;
-    margin-bottom: 15px;
-}
+    display:flex;
 
+    align-items:center;
 
-.experience-card h4 {
-    color: #2563eb;
-    margin-bottom: 15px;
-}
+    background:
 
-
-.experience-card ul {
-    padding-left: 20px;
-}
-
-
-.experience-card li {
-    margin-bottom: 10px;
-    color: #475569;
-}
-
-
-/* ERP Highlight Box */
-
-.erp-highlight {
-
-    margin-top:40px;
-    padding:35px;
-    border-radius:20px;
-    background: linear-gradient(
-        135deg,
-        #eff6ff,
-        #dbeafe
+    linear-gradient(
+    135deg,
+    #08111f,
+    #102a43
     );
 
 }
 
 
-.erp-highlight h3 {
 
-    color:#1e3a8a;
+.hero h5{
+
+    color:#00c6ff;
+
+    font-size:20px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:55px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+}
+
+
+
+.hero h1 span{
+
+    color:#00c6ff;
+
+}
+
+
+
+.hero p{
+
+    color:#cfd8e3;
+
+    font-size:18px;
+
+    max-width:650px;
+
+}
+
+
+
+.hero-buttons{
+
+    margin-top:35px;
+
+}
+
+
+
+.hero-buttons a{
+
+    margin-right:15px;
+
+}
+
+
+
+.hero-card{
+
+    height:350px;
+
+    border-radius:30px;
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+
+
+.hero-card h3{
+
+    font-size:45px;
+
+    color:#00c6ff;
+
+}
+
+
+
+.hero-card span{
+
+    color:#ddd;
+   /* ==========================
+   Section Titles
+========================== */
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+.section-title h2{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    color:#ffffff;
+
+}
+
+
+.section-title p{
+
+    color:#aebccc;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* ==========================
+   About Section
+========================== */
+
+
+.about-section h3{
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.about-section p{
+
+    color:#cfd8e3;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+.skills-list{
+
+    margin-top:30px;
+
+}
+
+
+
+.skill-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:15px;
+
+    font-weight:500;
+
+}
+
+
+
+.skill-item i{
+
+    color:#00c6ff;
+
+    font-size:22px;
+
+}
+
+
+
+
+.experience-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.experience-box{
+
+    background:
+
+    rgba(255,255,255,.08);
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+.experience-box h2{
+
+    color:#00c6ff;
+
+    font-size:45px;
+
+}
+
+
+
+.experience-box p{
+
+    color:#ddd;
+
+}
+
+
+
+
+
+/* ==========================
+   Skills Cards
+========================== */
+
+
+.skills-section{
+
+    background:#0d1b2a;
+
+}
+
+
+
+.skill-card{
+
+    background:
+
+    rgba(255,255,255,.07);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    height:100%;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.skill-card i{
+
+    font-size:40px;
+
+    color:#00c6ff;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.skill-card h4{
+
+    font-size:24px;
+
     margin-bottom:15px;
 
 }
 
 
-.erp-highlight p {
 
-    color:#334155;
-    font-size:17px;
-}
+.skill-card p{
 
-
-/* Responsive */
-
-@media(max-width:900px){
-
-    .experience-container {
-        grid-template-columns:1fr;
-    }
+    color:#cfd8e3;
 
 }
 
 
-@media(max-width:600px){
-
-    .dashboard-grid {
-        grid-template-columns:1fr;
-    }
-
-    .dashboard-card img {
-        height:200px;
-    }
-
-}
-/* =====================================
-   Stage 2 - Power BI Projects Showcase
-===================================== */
-
-.projects-section {
-    background: #f8fafc;
-}
 
 
-.projects-grid {
 
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
+/* ==========================
+   Services Cards
+========================== */
+
+
+.services-section{
+
+    background:#08111f;
 
 }
 
 
-.project-card {
 
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.10);
-    transition:0.4s ease;
+.service-card{
+
+    background:
+
+    rgba(255,255,255,.08);
+
+    padding:35px;
+
+    border-radius:25px;
+
+    margin-bottom:30px;
+
+    height:100%;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.1);
 
 }
 
 
-.project-card:hover {
+
+.service-card:hover{
 
     transform:translateY(-12px);
 
 }
 
 
-.project-image {
 
-    height:220px;
-    overflow:hidden;
+.service-icon{
 
-}
+    width:70px;
 
-
-.project-image img {
-
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:0.5s;
-
-}
-
-
-.project-card:hover img {
-
-    transform:scale(1.08);
-
-}
-
-
-.project-info {
-
-    padding:25px;
-
-}
-
-
-.project-info h3 {
-
-    font-size:22px;
-    color:#0f172a;
-    margin-bottom:12px;
-
-}
-
-
-.project-info p {
-
-    color:#64748b;
-    line-height:1.7;
-
-}
-
-
-/* Power BI Labels */
-
-.project-tools {
-
-    margin-top:20px;
-
-}
-
-
-.project-tools span {
-
-    display:inline-block;
-    padding:7px 14px;
-    margin:5px;
-    background:#dbeafe;
-    color:#1d4ed8;
-    border-radius:20px;
-    font-size:13px;
-
-}
-
-
-/* Responsive */
-
-@media(max-width:992px){
-
-    .projects-grid {
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-}
-
-
-@media(max-width:600px){
-
-    .projects-grid {
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-/* =====================================
-   Stage 2 - Contact & Footer Design
-===================================== */
-
-.contact-section {
-
-    background:#0f172a;
-    color:white;
-    text-align:center;
-
-}
-
-
-.contact-box {
-
-    max-width:800px;
-    margin:auto;
-}
-
-
-.contact-box h2 {
-
-    font-size:36px;
-    margin-bottom:20px;
-
-}
-
-
-.contact-box p {
-
-    color:#cbd5e1;
-    font-size:18px;
-    margin-bottom:30px;
-
-}
-
-
-/* Contact Buttons */
-
-.contact-buttons {
+    height:70px;
 
     display:flex;
+
+    align-items:center;
+
     justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
 
-}
-
-
-.contact-btn {
-
-    padding:14px 30px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-
-}
-
-
-.linkedin-btn {
-
-    background:#0a66c2;
-    color:white;
-
-}
-
-
-.github-btn {
-
-    background:#ffffff;
-    color:#111827;
-
-}
-
-
-.cv-btn {
-
-    background:#38bdf8;
-    color:#0f172a;
-
-}
-
-
-.contact-btn:hover {
-
-    transform:translateY(-5px);
-
-}
-
-
-/* Footer */
-
-.footer {
-
-    background:#020617;
-    color:#94a3b8;
-    text-align:center;
-    padding:25px;
-
-}
-
-
-.footer strong {
-
-    color:white;
-
-}
-
-
-/* Mobile */
-
-@media(max-width:600px){
-
-    .contact-box h2 {
-
-        font-size:28px;
-
-    }
-
-    .contact-buttons {
-
-        flex-direction:column;
-        align-items:center;
-
-    }
-
-    .contact-btn {
-
-        width:80%;
-
-    }
-
-}
-.project-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.project-gallery img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: 0.3s;
-    box-shadow: 0 8px 20px rgba(0,0,0,.2);
-}
-
-.project-gallery img:hover {
-    transform: scale(1.05);
-}
-.contact-buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    margin-top:30px;
-    flex-wrap:wrap;
-}
-
-.btn-whatsapp,
-.btn-email{
-    padding:15px 30px;
-    border-radius:50px;
-    text-decoration:none;
-    color:#fff;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn-whatsapp{
-    background:#25D366;
-}
-
-.btn-email{
-    background:#0078D4;
-}
-
-.btn-whatsapp:hover,
-.btn-email:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
-}
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin: 50px 0;
-}
-
-.stat-box {
-    text-align: center;
-    padding: 25px;
-    min-width: 180px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-}
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    padding: 20px 0;
-}
-
-.stat-box {
-    text-align: center;
-    background: transparent;
-    box-shadow: none;
-    padding: 10px;
-    min-width: 120px;
-}
-
-.stat-box h2 {
-    font-size: 26px;
-    margin: 0;
-}
-
-.stat-box p {
-    font-size: 12px;
-    margin-top: 8px;
-    opacity: 0.8;
-}
-.project-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.project-card {
-    background: transparent;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: 0.3s;
-}
-
-.project-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 15px;
-    display: block;
-}
-
-.project-info {
-    padding: 15px 5px;
-}
-
-.project-info h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.project-info p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.project-info span {
-    font-size: 13px;
-    opacity: 0.8;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-.projects {
-    width: 90%;
-    margin: 60px auto;
-}
-
-.projects h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.project-gallery {
-    display: flex;
-    justify-content: center;
-}
-
-.project-card {
-    width: 350px;
-    overflow: hidden;
-}
-
-.project-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.project-info {
-    text-align: center;
-    padding: 15px;
-}
-
-.project-info h3 {
-    margin: 10px 0;
-}
-
-.project-info p {
-    font-size: 14px;
-}
-
-.project-info span {
-    font-size: 13px;
-}
-.project-card {
-    background: rgba(255,255,255,0.05);
-    border-radius: 20px;
-    padding: 20px;
-    width: 380px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.project-info h3 {
-    color: white;
-    font-size: 22px;
-    margin-top: 20px;
-}
-
-.project-info p {
-    color: #cbd5e1;
-    line-height: 1.6;
-}
-
-.project-info span {
-    color: #38bdf8;
-    font-size: 14px;
-}
-.project-card {
-    background: rgba(255,255,255,0.05);
-    border-radius: 20px;
-    padding: 20px;
-    width: 380px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.project-info h3 {
-    color: white;
-    font-size: 22px;
-    margin-top: 20px;
-}
-
-.project-info p {
-    color: #cbd5e1;
-    line-height: 1.6;
-}
-
-.project-info span {
-    color: #38bdf8;
-    font-size: 14px;
-}
-.project-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 40px;
-}
-
-.project-card {
-    width: auto;
-}
-
-
-@media(max-width:900px){
-
-.project-gallery {
-    grid-template-columns: repeat(2,1fr);
-}
-
-}
-
-
-@media(max-width:600px){
-
-.project-gallery {
-    grid-template-columns:1fr;
-}
-
-}
-/* =========================
-   Professional Projects Section
-========================= */
-
-.projects {
-    padding: 60px 8%;
-}
-
-.projects h2 {
-    text-align: center;
-    font-size: 38px;
-    margin-bottom: 40px;
-    color: #ffffff;
-}
-
-
-.project-gallery {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-
-}
-
-
-.project-card {
-
-    background: rgba(255,255,255,0.08);
-    border-radius: 20px;
-    overflow: hidden;
-    transition: 0.4s;
-    border: 1px solid rgba(255,255,255,0.15);
-
-}
-
-
-.project-card:hover {
-
-    transform: translateY(-10px);
-
-}
-
+    background:#00c6ff;
 
-.project-card img {
+    border-radius:50%;
 
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
+    margin-bottom:25px;
 
 }
 
-
-.project-info {
-
-    padding: 25px;
-
-}
-
-
-.project-info h3 {
-
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 15px;
-
-}
-
-
-.project-info p {
-
-    color: #dddddd;
-    line-height: 1.7;
-    font-size: 16px;
-
-}
-
-
-.project-info span {
-
-    display: inline-block;
-    margin-top: 15px;
-    color: #00d9ff;
-    font-weight: bold;
-
-}
-
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.projects {
-    padding:40px 5%;
-}
 
 
-.projects h2 {
+.service-icon i{
 
     font-size:30px;
 
-}
-
-
-.project-card img {
-
-    height:200px;
-
-}
-
-}
-/* ===== Project Buttons ===== */
-
-.project-buttons{
-
-    display:flex;
-    gap:12px;
-    margin-top:20px;
-    flex-wrap:wrap;
-
-}
-
-.project-buttons a{
-
-    text-decoration:none;
-    padding:10px 18px;
-    border-radius:8px;
-    font-weight:600;
-    transition:.3s;
-
-}
-
-.btn-demo{
-
-    background:#00c6ff;
     color:white;
 
 }
 
-.btn-demo:hover{
 
-    background:#0095d9;
-    transform:translateY(-2px);
+
+.service-card h4{
+
+    font-size:25px;
+
+    margin-bottom:15px;
 
 }
 
-.btn-code{
 
-    border:2px solid #00c6ff;
+
+.service-card p{
+
+    color:#cfd8e3;
+
+}
+
+
+
+.service-card a{
+
     color:#00c6ff;
 
+    font-weight:600;
+
 }
 
-.btn-code:hover{
-
-    background:#00c6ff;
-    color:white;
 }

@@ -1030,3 +1030,31 @@ section {
     color: #38bdf8;
     font-size: 14px;
 }
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.project-card {
+    width: auto;
+}
+
+
+@media(max-width:900px){
+
+.project-gallery {
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:600px){
+
+.project-gallery {
+    grid-template-columns:1fr;
+}
+
+}

@@ -995,3 +995,38 @@ section {
     color: #38bdf8;
     font-size: 14px;
 }
+.project-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 20px;
+    width: 380px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.project-info h3 {
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.project-info p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.project-info span {
+    color: #38bdf8;
+    font-size: 14px;
+}
